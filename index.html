@@ -1443,70 +1443,73 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="section-title">
-                <h2>Academic Projects</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card animate" data-project="1">
-                    <div class="project-img">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Social Network Simulation (C++)</h3>
-                        <p>Developed a console-based social media application simulating user profiles, friend connections, and news feeds. Applied core OOP concepts including inheritance, encapsulation, and polymorphism.</p>
-                        <div class="project-tech">
-                            <span>C++</span>
-                            <span>OOP</span>
-                            <span>Data Structures</span>
-                        </div>
-                    </div>
-                    <div class="view-project">View Project</div>
-                </div>
-                <div class="project-card animate" data-project="2">
-                    <div class="project-img">
-                        <i class="fas fa-solar-panel"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Solar Panel ROI Calculator (C++)</h3>
-                        <p>Engineered a C++ application to calculate solar panel requirements and ROI based on electricity consumption and local weather data. Implemented OOP principles and file handling.</p>
-                        <div class="project-tech">
-                            <span>C++</span>
-                            <span>OOP</span>
-                            <span>File I/O</span>
-                        </div>
-                    </div>
-                    <div class="view-project">View Project</div>
-                </div>
-            </div>
+<section id="projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>Academic Projects</h2>
         </div>
-    </section>
-
-    <!-- Project Modals -->
-    <div class="modal" id="project-modal">
-        <div class="modal-content">
-            <button class="close-modal">&times;</button>
-            <div class="modal-header">
-                <h3 id="modal-title">Project Title</h3>
-            </div>
-            <div class="modal-body">
-                <div class="modal-image">
-                    <img src="" alt="Project Image" id="modal-image">
+        <div class="projects-grid">
+            <!-- Project 1 with its own GitHub link -->
+            <div class="project-card animate" data-project="1" data-github="#">
+                <div class="project-img">
+                    <i class="fas fa-users"></i>
                 </div>
-                <div class="modal-details">
-                    <p id="modal-description">Project description goes here.</p>
-                    <div class="modal-tech" id="modal-tech">
-                        <!-- Technology tags will be added here -->
+                <div class="project-content">
+                    <h3>Social Network Simulation (C++)</h3>
+                    <p>Developed a console-based social media application simulating user profiles, friend connections, and news feeds. Applied core OOP concepts including inheritance, encapsulation, and polymorphism.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>OOP</span>
+                        <span>Data Structures</span>
                     </div>
-                    <a href="#" class="btn" id="modal-link" target="_blank">This Section is Underprogress</a>
-                    <a href="https://github.com/zohaib-mzg/Alpha-Solar---Solar-Recommendation-System" class="btn btn-outline" id="modal-github-link" target="_blank">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
                 </div>
+                <div class="view-project">View Project</div>
+            </div>
+            
+            <!-- Project 2 with its own GitHub link -->
+            <div class="project-card animate" data-project="2" data-github="https://github.com/zohaib-mzg/Alpha-Solar---Solar-Recommendation-System">
+                <div class="project-img">
+                    <i class="fas fa-solar-panel"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Solar Panel ROI Calculator (C++)</h3>
+                    <p>Engineered a C++ application to calculate solar panel requirements and ROI based on electricity consumption and local weather data. Implemented OOP principles and file handling.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>OOP</span>
+                        <span>File I/O</span>
+                    </div>
+                </div>
+                <div class="view-project">View Project</div>
             </div>
         </div>
     </div>
+</section>
+
+<!-- Project Modal (Single modal that updates dynamically) -->
+<div class="modal" id="project-modal">
+    <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="modal-header">
+            <h3 id="modal-title">Project Title</h3>
+        </div>
+        <div class="modal-body">
+            <div class="modal-image">
+                <img src="" alt="Project Image" id="modal-image">
+            </div>
+            <div class="modal-details">
+                <p id="modal-description">Project description goes here.</p>
+                <div class="modal-tech" id="modal-tech">
+                    <!-- Technology tags will be added here -->
+                </div>
+                <a href="#" class="btn" id="modal-link" target="_blank">This Section is Underprogress</a>
+                <a href="#" class="btn btn-outline" id="modal-github-link" target="_blank">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Achievements Section -->
     <section id="achievements">
@@ -1599,7 +1602,7 @@
                         <li><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</li>
                     </ul>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/muhammad-zohaib-74777a351" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/zohaib-mzg" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://www.facebook.com/share/1CgJyhLXAu/" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://www.instagram.com/zohaib.mzg?igsh=MXdwb2w3cDB4ZjZobg==" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://x.com/zohaib_mzg" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -1855,6 +1858,7 @@
 </body>
 
 </html>
+
 
 
 
