@@ -253,7 +253,7 @@ section { position: relative; overflow: hidden; }
 #hero {
   min-height: 100vh;
   display: flex; align-items: center;
-  padding: 100px 0 60px;
+  padding: 90px 0 60px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1291,8 +1291,16 @@ footer {
   .stats-grid { grid-template-columns: repeat(3, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
   .about-cards { grid-template-columns: repeat(2, 1fr); }
-  .hero-image-wrap { --img-size: clamp(180px, 20vw, 280px); --ring-pad: 26px; }
-  .hero-inner { gap: clamp(2rem, 4vw, 5rem); }
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .hero-content { width: 100%; max-width: 600px; padding-right: 0; }
+  .hero-desc { max-width: 100%; }
+  .hero-cta { justify-content: center; }
+  .hero-image-wrap { --img-size: clamp(200px, 36vw, 300px); --ring-pad: 26px; order: -1; margin-left: 0; transform: none; }
 }
 @media (max-width: 768px) {
   .nav-links { display: none; }
@@ -1306,7 +1314,7 @@ footer {
   .hero-content { width: 100%; max-width: 100%; padding-right: 0; }
   .hero-desc { max-width: 100%; }
   .hero-cta { justify-content: center; }
-  .hero-image-wrap { --img-size: clamp(160px, 46vw, 230px); --ring-pad: 22px; order: -1; margin-left: 0; transform: none; }
+  .hero-image-wrap { --img-size: clamp(160px, 52vw, 260px); --ring-pad: 20px; order: -1; margin-left: 0; transform: none; }
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1420,7 +1428,7 @@ footer {
             <i class="fa-solid fa-paper-plane"></i>
             Contact Me
           </a>
-          <a href="https://drive.google.com/file/d/1ZxEJGYeHqbxkDT2yWAuBs-3BShnpdhBP/view?usp=sharing" class="btn-ghost magnetic" title="Resume — add your PDF link here">
+          <a href="https://drive.google.com/file/d/1ZxEJGYeHqbxkDT2yWAuBs-3BShnpdhBP/view?usp=drive_link" class="btn-ghost magnetic" title="Resume — add your PDF link here">
             <i class="fa-solid fa-download"></i>
             Resume
           </a>
