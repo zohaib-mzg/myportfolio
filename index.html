@@ -3,7 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muhammad Zohaib — AI Engineer & Data Scientist</title>
+
+<!-- ═══ PRIMARY SEO ═══ -->
+<title>Muhammad Zohaib — AI Engineer & Data Scientist | Lahore, Pakistan</title>
+<meta name="description" content="Muhammad Zohaib is an AI Engineer and Data Science student at FAST NUCES Lahore, Pakistan. Specializing in machine learning, deep learning, computer vision, full-stack development, and x86 assembly systems programming.">
+<meta name="keywords" content="Muhammad Zohaib, Muhammad Zohaib AI Engineer, Muhammad Zohaib Data Scientist, Muhammad Zohaib FAST NUCES, zohaib-mzg, AI Engineer Pakistan, Data Science Lahore, Machine Learning Engineer, Python Developer Pakistan, Computer Vision Developer, Full Stack Developer Lahore">
+<meta name="author" content="Muhammad Zohaib">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#020408">
+<link rel="canonical" href="https://muhammadzohaib.vercel.app/">
+
+<!-- ═══ OPEN GRAPH (Facebook / LinkedIn / WhatsApp) ═══ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://muhammadzohaib.vercel.app/">
+<meta property="og:title" content="Muhammad Zohaib — AI Engineer & Data Scientist">
+<meta property="og:description" content="AI Engineer and Data Science student at FAST NUCES Lahore. Building intelligent systems with ML, deep learning, computer vision, and full-stack development.">
+<meta property="og:image" content="https://muhammadzohaib.vercel.app/a.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Muhammad Zohaib — AI Engineer & Data Scientist">
+<meta property="og:site_name" content="Muhammad Zohaib Portfolio">
+<meta property="og:locale" content="en_US">
+
+<!-- ═══ TWITTER CARD ═══ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@zohaib_mzg">
+<meta name="twitter:creator" content="@zohaib_mzg">
+<meta name="twitter:title" content="Muhammad Zohaib — AI Engineer & Data Scientist">
+<meta name="twitter:description" content="AI Engineer and Data Science student at FAST NUCES Lahore. Building intelligent systems with ML, deep learning, and full-stack dev.">
+<meta name="twitter:image" content="https://muhammadzohaib.vercel.app/a.jpeg">
+
+<!-- ═══ GEO / LOCAL ═══ -->
+<meta name="geo.region" content="PK-PB">
+<meta name="geo.placename" content="Lahore, Pakistan">
+
+<!-- ═══ JSON-LD STRUCTURED DATA ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Muhammad Zohaib",
+  "alternateName": "zohaib-mzg",
+  "url": "https://muhammadzohaib.vercel.app/",
+  "image": "https://muhammadzohaib.vercel.app/a.jpeg",
+  "jobTitle": "AI Engineer & Data Scientist",
+  "description": "AI Engineer and Data Science student at FAST NUCES Lahore, Pakistan. Specializing in machine learning, deep learning, computer vision, and full-stack development.",
+  "email": "zohaib.mzg158@gmail.com",
+  "telephone": "+923457627926",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lahore",
+    "addressCountry": "PK"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "FAST NUCES Lahore",
+    "url": "https://lhr.nu.edu.pk"
+  },
+  "sameAs": [
+    "https://github.com/zohaib-mzg",
+    "https://www.linkedin.com/in/zohaib-mzg",
+    "https://x.com/zohaib_mzg",
+    "https://www.instagram.com/zohaib.mzg"
+  ],
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Deep Learning",
+    "Computer Vision",
+    "Python Programming",
+    "Data Science",
+    "Full Stack Development",
+    "x86 Assembly"
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,14 +165,18 @@ body.hovering #cursor-ring { width: 56px; height: 56px; border-color: var(--acce
   z-index: 99997;
   display: flex; align-items: center; justify-content: center;
   flex-direction: column; gap: 24px;
+  padding: 1rem 1.5rem;
   transition: opacity 0.8s var(--ease-out), visibility 0.8s;
 }
 #loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
 .loader-logo {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.4rem, 7vw, 3.5rem);
   font-weight: 800;
   letter-spacing: -0.02em;
+  text-align: center;
+  word-break: break-word;
+  max-width: 90vw;
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -106,7 +185,7 @@ body.hovering #cursor-ring { width: 56px; height: 56px; border-color: var(--acce
 }
 @keyframes logoPulse { from { filter: brightness(1); } to { filter: brightness(1.4); } }
 .loader-bar-wrap {
-  width: 240px; height: 2px;
+  width: clamp(180px, 60vw, 240px); height: 2px;
   background: rgba(0,212,255,0.1);
   border-radius: 2px; overflow: hidden;
 }
@@ -119,10 +198,12 @@ body.hovering #cursor-ring { width: 56px; height: 56px; border-color: var(--acce
 @keyframes loaderFill { from { width: 0; } to { width: 100%; } }
 .loader-text {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: clamp(9px, 2.5vw, 11px);
   color: var(--text-muted);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
+  text-align: center;
+  max-width: 90vw;
   animation: blink 1s step-end infinite;
 }
 @keyframes blink { 50% { opacity: 0; } }
@@ -1087,18 +1168,7 @@ section { position: relative; overflow: hidden; }
   margin-top: 0.4rem;
 }
 
-@media (max-width: 768px) {
-  .timeline-line-track { left: 22px; }
-  .timeline-node { width: 44px; height: 44px; font-size: 0.9rem; }
-  .timeline-item { gap: 1.2rem; }
-  .timeline-content { padding: 1.2rem 1.4rem; }
-}
-@media (max-width: 480px) {
-  .timeline { padding: 0; }
-  .timeline-item { gap: 0.8rem; }
-  .timeline-node { width: 38px; height: 38px; font-size: 0.8rem; }
-  .timeline-node::before, .timeline-node::after { display: none; }
-}
+/* Timeline responsive rules consolidated in main @media block below */
 
 /* ═══════════════ CONTACT ═══════════════ */
 #contact {
@@ -1288,6 +1358,8 @@ footer {
 }
 
 /* ═══════════════ RESPONSIVE ═══════════════ */
+
+/* ── Laptop / Large Tablet (≤1024px) ── */
 @media (max-width: 1024px) {
   .stats-grid { grid-template-columns: repeat(3, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 3rem; }
@@ -1301,11 +1373,26 @@ footer {
   .hero-content { width: 100%; max-width: 600px; padding-right: 0; }
   .hero-desc { max-width: 100%; }
   .hero-cta { justify-content: center; }
-  .hero-image-wrap { --img-size: clamp(200px, 36vw, 300px); --ring-pad: 26px; order: -1; margin-left: 0; transform: none; }
+  .hero-socials { justify-content: center; }
+  .hero-image-wrap {
+    --img-size: clamp(200px, 36vw, 300px);
+    --ring-pad: 26px;
+    order: -1;
+    margin-left: 0;
+    transform: none;
+  }
+  .contact-grid { grid-template-columns: 1fr; }
 }
+
+/* ── Tablet (≤768px) ── */
 @media (max-width: 768px) {
+  /* Cursor: hide on touch devices */
+  #cursor-dot, #cursor-ring, #cursor-glow { display: none; }
+  body { cursor: auto; }
+
   .nav-links { display: none; }
   .hamburger { display: flex; }
+
   #hero { padding: 80px 0 40px; min-height: auto; }
   .hero-inner {
     flex-direction: column;
@@ -1319,19 +1406,47 @@ footer {
   .hero-role { font-size: 0.85rem; margin-bottom: 1rem; }
   .hero-desc { max-width: 100%; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.7; }
   .hero-cta { justify-content: center; flex-wrap: wrap; gap: 0.75rem; }
-  .hero-image-wrap { --img-size: clamp(150px, 48vw, 220px); --ring-pad: 18px; order: -1; margin-left: 0; transform: none; }
+  .hero-socials { justify-content: center; }
+  .hero-image-wrap {
+    --img-size: clamp(150px, 48vw, 220px);
+    --ring-pad: 18px;
+    order: -1;
+    margin-left: 0;
+    transform: none;
+  }
+
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .projects-grid { grid-template-columns: 1fr; }
+
   .timeline-line-track { left: 22px; }
   .timeline-node { width: 44px; height: 44px; }
+  .timeline-item { gap: 1.2rem; }
+  .timeline-content { padding: 1.2rem 1.4rem; }
+
   .footer-inner { flex-direction: column; text-align: center; }
   .about-grid { gap: 2rem; }
+
+  /* Skills grid: 1 col on tablet */
+  .skills-grid { grid-template-columns: 1fr; }
+
+  /* Section padding tighter on tablet */
+  #about, #skills, #projects, #education, #contact {
+    padding: clamp(3.5rem, 8vw, 6rem) 0;
+  }
 }
+
+/* ── Mobile (≤480px) ── */
 @media (max-width: 480px) {
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  html { font-size: 15px; }
+
+  .container { padding: 0 1.25rem; }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+  .stat-card { padding: 1.4rem 0.8rem; }
   .about-cards { grid-template-columns: 1fr; }
+
   #hero { padding: 72px 0 32px; }
   .hero-badge { font-size: 0.6rem; padding: 5px 14px; margin-bottom: 0.8rem; }
   .hero-title { font-size: clamp(1.6rem, 8.5vw, 2.2rem); margin-bottom: 0.6rem; }
@@ -1339,12 +1454,46 @@ footer {
   .hero-desc { font-size: 0.88rem; margin-bottom: 1.2rem; }
   .hero-cta { flex-direction: column; align-items: center; gap: 0.6rem; }
   .btn-primary, .btn-ghost { width: 100%; justify-content: center; padding: 12px 24px; }
-  .hero-image-wrap { --img-size: clamp(130px, 46vw, 190px); --ring-pad: 16px; transform: none; }
+  .hero-image-wrap {
+    --img-size: clamp(130px, 46vw, 190px);
+    --ring-pad: 16px;
+    transform: none;
+  }
+
   .timeline { padding: 0; }
   .timeline-item { gap: 0.8rem; }
   .timeline-node { width: 38px; height: 38px; font-size: 0.8rem; }
   .timeline-node::before, .timeline-node::after { display: none; }
+  .timeline-content { padding: 1rem 1.1rem; }
+  .timeline-badge { font-size: 0.62rem; padding: 3px 10px; }
+
+  /* Project cards full width */
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-card { min-height: auto; padding: 1.5rem; }
+
+  /* Contact links wrap nicely */
+  .contact-link-value { font-size: 0.78rem; word-break: break-all; }
+
+  /* Footer */
+  .footer-copy, .footer-tagline { font-size: 0.72rem; }
+
+  /* Nav logo shorter on very small screens */
+  .nav-logo { font-size: 1.05rem; }
+
+  /* Section headers */
+  .section-title { font-size: clamp(1.7rem, 7vw, 2.4rem); }
 }
+
+/* ── Very small phones (≤360px) ── */
+@media (max-width: 360px) {
+  .hero-title { font-size: clamp(1.4rem, 8vw, 1.9rem); }
+  .hero-badge { font-size: 0.55rem; letter-spacing: 0.1em; }
+  .loader-logo { font-size: clamp(1.1rem, 8vw, 1.8rem); }
+  .loader-text { letter-spacing: 0.08em; }
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+}
+
+/* ── Large desktops (≥1600px) ── */
 @media (min-width: 1600px) {
   .container { max-width: 1440px; }
   .hero-image-wrap { --img-size: clamp(320px, 24vw, 420px); }
@@ -1967,6 +2116,15 @@ window.addEventListener('load', () => {
 });
 document.body.style.overflow = 'hidden';
 
+// ═══════════════ TOUCH DEVICE DETECTION ═══════════════
+const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+if (isTouchDevice) {
+  document.getElementById('cursor-dot').style.display = 'none';
+  document.getElementById('cursor-ring').style.display = 'none';
+  document.getElementById('cursor-glow').style.display = 'none';
+  document.body.style.cursor = 'auto';
+}
+
 // ═══════════════ CURSOR ═══════════════
 const cursorDot = document.getElementById('cursor-dot');
 const cursorRing = document.getElementById('cursor-ring');
@@ -2051,7 +2209,8 @@ class Particle {
   }
 }
 
-for (let i = 0; i < 120; i++) particles.push(new Particle());
+const particleCount = isTouchDevice ? 40 : 120;
+for (let i = 0; i < particleCount; i++) particles.push(new Particle());
 
 // Mesh gradient orbs
 const orbs = [
@@ -2282,6 +2441,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
 });
 
 // ═══════════════ MAGNETIC BUTTONS ═══════════════
+if (!isTouchDevice) {
 document.querySelectorAll('.magnetic').forEach(btn => {
   btn.addEventListener('mousemove', e => {
     const rect = btn.getBoundingClientRect();
@@ -2295,6 +2455,7 @@ document.querySelectorAll('.magnetic').forEach(btn => {
     btn.style.transform = '';
   });
 });
+}
 
 // ═══════════════ SMOOTH SCROLL ═══════════════
 document.querySelectorAll('a[href^="#"]').forEach(a => {
