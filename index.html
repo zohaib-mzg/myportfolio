@@ -8,9 +8,9 @@
 <meta name="google-site-verification" content="Cbsfo1xkI1Ba72xbYBTeme8r1AQtUpELo91rsR8R4eU" />
 
 <!-- ═══ PRIMARY SEO ═══ -->
-<title>Muhammad Zohaib — AI Engineer & Data Scientist | Lahore, Pakistan</title>
+<title>Muhammad Zohaib - Founder & CEO @AlphaLix Digital</title>
 <meta name="description" content="Muhammad Zohaib is an AI Engineer and Data Science student at FAST NUCES Lahore, Pakistan. Specializing in machine learning, deep learning, computer vision, full-stack development, and x86 assembly systems programming.">
-<meta name="keywords" content="Muhammad Zohaib, Muhammad Zohaib AI Engineer, Muhammad Zohaib Data Scientist, Muhammad Zohaib FAST NUCES, zohaib-mzg, AI Engineer Pakistan, Data Science Lahore, Machine Learning Engineer, Python Developer Pakistan, Computer Vision Developer, Full Stack Developer Lahore">
+<meta name="keywords" content="Muhammad Zohaib, Muhammad Zohaib AI Engineer, Muhammad Zohaib Data Scientist, Muhammad Zohaib FAST NUCES, zohaib-mzg, AI Engineer Pakistan, Data Science Lahore, Machine Learning Engineer, Python Developer Pakistan, Computer Vision Developer, Full Stack Developer Lahore, Founder @AlphaLix Digital, CEO @AlphaLix Digital, Founder & CEO at AlphaLix Digital, AlphaLix Digital, Founder AlphaLix Digital">
 <meta name="author" content="Muhammad Zohaib">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="theme-color" content="#020408">
@@ -76,11 +76,23 @@
     "Computer Vision",
     "Python Programming",
     "Data Science",
-    "Full Stack Development",
-    "x86 Assembly"
+    "Full Stack Development"
   ]
 }
 </script>
+
+<!-- ═══ FAVICONS ═══ -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicons/icon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicons/android-chrome-512x512.png">
+<meta name="msapplication-TileColor" content="#020408">
+<meta name="msapplication-TileImage" content="/favicons/mstile-150x150.png">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="manifest" href="/site.webmanifest">
@@ -122,44 +134,10 @@ body {
   background: var(--bg-void);
   color: var(--text-primary);
   overflow-x: hidden;
-  cursor: none;
   line-height: 1.6;
 }
 
-/* ═══════════════ CUSTOM CURSOR ═══════════════ */
-#cursor-dot {
-  position: fixed; top: 0; left: 0;
-  width: 8px; height: 8px;
-  background: var(--accent-primary);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s, width 0.3s, height 0.3s, background 0.3s;
-  mix-blend-mode: screen;
-}
-#cursor-ring {
-  position: fixed; top: 0; left: 0;
-  width: 36px; height: 36px;
-  border: 1px solid rgba(0, 212, 255, 0.5);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99998;
-  transform: translate(-50%, -50%);
-  transition: transform 0.15s var(--ease-out), width 0.4s var(--ease-out), height 0.4s var(--ease-out), border-color 0.3s;
-}
-#cursor-glow {
-  position: fixed; top: 0; left: 0;
-  width: 300px; height: 300px;
-  background: radial-gradient(circle, rgba(0,212,255,0.04) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99990;
-  transform: translate(-50%, -50%);
-  transition: transform 0.4s ease;
-}
-body.hovering #cursor-dot { width: 14px; height: 14px; background: var(--accent-secondary); }
-body.hovering #cursor-ring { width: 56px; height: 56px; border-color: var(--accent-secondary); }
+
 
 /* ═══════════════ LOADER ═══════════════ */
 #loader {
@@ -1520,11 +1498,6 @@ footer {
 <!-- Noise -->
 <div class="noise"></div>
 
-<!-- Cursor -->
-<div id="cursor-dot"></div>
-<div id="cursor-ring"></div>
-<div id="cursor-glow"></div>
-
 <!-- Scroll Progress -->
 <div id="scroll-progress"></div>
 
@@ -1545,6 +1518,7 @@ footer {
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#alphalix">AlphaLix Digital</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -1558,6 +1532,7 @@ footer {
   <a href="#about" class="mobile-link">About</a>
   <a href="#skills" class="mobile-link">Skills</a>
   <a href="#projects" class="mobile-link">Projects</a>
+  <a href="#alphalix" class="mobile-link">AlphaLix Digital</a>
   <a href="#education" class="mobile-link">Education</a>
   <a href="#contact" class="mobile-link">Contact</a>
 </div>
@@ -1632,11 +1607,15 @@ footer {
           </div>
           <div class="about-highlight-item">
             <i class="fa-solid fa-graduation-cap"></i>
-            <span>BS Data Science — CGPA 3.35 / 4.0</span>
+            <span>BS Data Science - CGPA 3.43 / 4.0</span>
+          </div>
+          <div class="about-highlight-item">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Founder & CEO - <a href="https://alphalix-digital.netlify.app/" target="_blank" style="color:var(--accent-primary);text-decoration:none;font-weight:600;">AlphaLix Digital</a></span>
           </div>
           <div class="about-highlight-item">
             <i class="fa-solid fa-code"></i>
-            <span>Python · C++ · x86 Assembly · JavaScript</span>
+            <span>Python · C++ · React/Node JS · JavaScript</span>
           </div>
           <div class="about-highlight-item">
             <i class="fa-solid fa-brain"></i>
@@ -1953,6 +1932,127 @@ footer {
   </div><!-- end container -->
 </section>
 
+<!-- ═══ ALPHALIX DIGITAL ═══ -->
+<section id="alphalix" style="padding: clamp(5rem, 10vw, 9rem) 0; z-index:1; position:relative;">
+  <div class="grid-pattern" style="opacity:0.45;"></div>
+  <div class="container">
+
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Startup Venture</p>
+      <h2 class="section-title">AlphaLix <span class="accent">Digital</span></h2>
+      <div class="section-divider"></div>
+      <p class="section-sub" style="margin-top:1rem;">Where intelligence meets design - building digital products that drive real-world growth.</p>
+    </div>
+
+    <!-- Founder card -->
+    <div class="reveal" style="
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glow);
+      border-radius: 24px;
+      padding: clamp(2rem,5vw,3rem) clamp(2rem,5vw,3.5rem);
+      backdrop-filter: blur(24px);
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      position: relative;
+      overflow: hidden;
+    ">
+      <!-- glow accent -->
+      <div style="
+        position:absolute; top:-60px; right:-60px;
+        width:260px; height:260px;
+        border-radius:50%;
+        background: radial-gradient(circle, rgba(0,212,255,0.12), transparent 70%);
+        pointer-events:none;
+      "></div>
+      <div style="
+        width: 80px; height: 80px;
+        border-radius: 50%;
+        border: 2px solid var(--border-glow);
+        overflow: hidden;
+        flex-shrink: 0;
+        box-shadow: 0 0 30px rgba(0,212,255,0.25);
+        background: var(--bg-surface);
+        position: relative;
+      ">
+        <img src="a.jpeg" alt="Muhammad Zohaib"
+          style="width:100%;height:100%;object-fit:cover;display:block;"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <!-- Fallback initials if image link not set -->
+        <div style="display:none;position:absolute;inset:0;align-items:center;justify-content:center;
+          font-family:var(--font-display);font-weight:800;font-size:1.4rem;
+          background:linear-gradient(135deg,var(--accent-tertiary),var(--accent-primary));
+          -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+          MZ
+        </div>
+      </div>
+      <div style="flex:1; min-width:200px;">
+        <p style="font-family:var(--font-mono); font-size:0.68rem; color:var(--accent-primary); letter-spacing:0.2em; text-transform:uppercase; margin-bottom:0.4rem;">Founder & CEO</p>
+        <h3 style="font-family:var(--font-display); font-size:clamp(1.4rem,3vw,2rem); font-weight:800; color:var(--text-primary); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:0.5rem;">MUHAMMAD ZOHAIB</h3>
+        <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.7;">Leading AlphaLix Digital - a Pakistan-based digital startup delivering AI-powered web solutions, brand identities, and growth-focused digital products to clients worldwide.</p>
+      </div>
+      <a href="https://alphalix-digital.netlify.app/" target="_blank" style="
+        display: inline-flex; align-items: center; gap: 10px;
+        padding: 13px 28px;
+        background: linear-gradient(135deg, var(--accent-tertiary), var(--accent-primary));
+        color: #fff;
+        font-family: var(--font-body);
+        font-size: 0.9rem;
+        font-weight: 600;
+        border-radius: 100px;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 24px rgba(0,100,255,0.35);
+        flex-shrink: 0;
+      " onmouseover="this.style.transform='translateY(-2px) scale(1.03)';this.style.boxShadow='0 8px 40px rgba(0,100,255,0.5)'"
+         onmouseout="this.style.transform='';this.style.boxShadow='0 4px 24px rgba(0,100,255,0.35)'">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        Visit AlphaLix Digital
+      </a>
+    </div>
+
+    <!-- What we do / Services -->
+    <div style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+    ">
+
+      <!-- Service 1 -->
+      <div class="about-card reveal reveal-delay-1">
+        <div class="about-card-icon"><i class="fa-solid fa-wand-magic-sparkles" style="color:var(--accent-primary);"></i></div>
+        <h4>AI-Powered Web Apps</h4>
+        <p>Custom web applications infused with machine learning, automation, and intelligent features — from smart dashboards to AI chatbots and data-driven tools.</p>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="about-card reveal reveal-delay-2">
+        <div class="about-card-icon"><i class="fa-solid fa-palette" style="color:var(--accent-secondary);"></i></div>
+        <h4>UI/UX & Branding</h4>
+        <p>Futuristic, conversion-focused interfaces and brand identities. We craft digital experiences that look exceptional and perform even better across all devices.</p>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="about-card reveal reveal-delay-3">
+        <div class="about-card-icon"><i class="fa-solid fa-magnifying-glass-chart" style="color:var(--accent-primary);"></i></div>
+        <h4>Data & Analytics</h4>
+        <p>Turning raw business data into actionable insights. Custom dashboards, automated reporting, predictive models, and BI tools that empower smarter decisions.</p>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="about-card reveal reveal-delay-4">
+        <div class="about-card-icon"><i class="fa-solid fa-layer-group" style="color:var(--accent-secondary);"></i></div>
+        <h4>Full-Stack Development</h4>
+        <p>End-to-end product engineering — scalable backends, responsive frontends, REST APIs, and cloud deployment pipelines built for performance and reliability.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ═══ EDUCATION ═══ -->
 <section id="education">
   <div class="grid-pattern" style="opacity:0.4;"></div>
@@ -1979,7 +2079,7 @@ footer {
           <h3>FAST NUCES Lahore</h3>
           <h4>BS Data Science</h4>
           <p class="timeline-desc">Focused on AI, Machine Learning, Data Analytics, and Software Engineering. Actively building projects spanning deep learning models, low-level systems, and enterprise platforms.</p>
-          <span class="timeline-badge"><i class="fa-solid fa-star" style="font-size:0.65rem;"></i> CGPA: 3.35 / 4.0 · Expected July 2028</span>
+          <span class="timeline-badge"><i class="fa-solid fa-star" style="font-size:0.65rem;"></i> CGPA: 3.43 / 4.0 · Expected July 2028</span>
         </div>
       </div>
 
@@ -2121,42 +2221,7 @@ document.body.style.overflow = 'hidden';
 
 // ═══════════════ TOUCH DEVICE DETECTION ═══════════════
 const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
-if (isTouchDevice) {
-  document.getElementById('cursor-dot').style.display = 'none';
-  document.getElementById('cursor-ring').style.display = 'none';
-  document.getElementById('cursor-glow').style.display = 'none';
-  document.body.style.cursor = 'auto';
-}
 
-// ═══════════════ CURSOR ═══════════════
-const cursorDot = document.getElementById('cursor-dot');
-const cursorRing = document.getElementById('cursor-ring');
-const cursorGlow = document.getElementById('cursor-glow');
-let mx = 0, my = 0, rx = 0, ry = 0, gx = 0, gy = 0;
-
-document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cursorDot.style.left = mx + 'px';
-  cursorDot.style.top = my + 'px';
-});
-
-function animateCursor() {
-  rx += (mx - rx) * 0.14;
-  ry += (my - ry) * 0.14;
-  gx += (mx - gx) * 0.06;
-  gy += (my - gy) * 0.06;
-  cursorRing.style.left = rx + 'px';
-  cursorRing.style.top = ry + 'px';
-  cursorGlow.style.left = gx + 'px';
-  cursorGlow.style.top = gy + 'px';
-  requestAnimationFrame(animateCursor);
-}
-animateCursor();
-
-document.querySelectorAll('a, button, .project-card, .about-card, .stat-card, .skill-category').forEach(el => {
-  el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
-  el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
-});
 
 // ═══════════════ SCROLL PROGRESS ═══════════════
 window.addEventListener('scroll', () => {
@@ -2268,6 +2333,7 @@ bgLoop();
 // ═══════════════ TYPEWRITER ═══════════════
 const roles = [
   'Full Stack Developer',
+  'Founder & CEO at AlphaLix Digital',
   'Aspiring Data Scientist',
   'AI Engineer',
   'Machine Learning Enthusiast',
